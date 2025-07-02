@@ -20,7 +20,7 @@ const Header = () => {
       <header className="container d-flex flex-column position-relative">
         <nav className=" navbar navbar-expand-md my-2">
           <div className="container-fluid d-flex">
-            <img  className="navbar-brand" src="/images/logo-bookmark.svg" alt="logo" />
+            <img  className="navbar-brand" src="./images/logo-bookmark.svg" alt="logo" />
             <button className=" navbar-toggler" data-bs-toggle="modal" data-bs-target="#nav">
               <span className=" navbar-toggler-icon"></span>
             </button>
@@ -48,8 +48,8 @@ const Header = () => {
                 <a className="nav-link fs-2 w-100 text-center py-3 border border-2 m-4 rounded-1" href="#">LOGIN</a>
               </div>
               <div className=" modal-footer d-flex flex-row justify-content-center">
-                <img className=" m-2" src="/images/icon-facebook.svg" alt="facebook icon" />
-                <img className=" m-2" src="/images/icon-twitter.svg" alt="twitter icon" />
+                <img className=" m-2" src="./images/icon-facebook.svg" alt="facebook icon" />
+                <img className=" m-2" src="./images/icon-twitter.svg" alt="twitter icon" />
               </div>
             </div>
           </div>
@@ -66,7 +66,7 @@ const Header = () => {
             </div>
           </div>
           <div className=" mt-4 order-0 order-md-1" style={{flex:" 0 0 50%"}}>
-            <img className="img-fluid w-100" src="/images/illustration-hero.svg" alt="" />
+            <img className="img-fluid w-100" src="./images/illustration-hero.svg" alt="" />
           </div>
         </div>
       </header>
@@ -79,9 +79,9 @@ const Header = () => {
 const Features = () => {
   const [tab,setTab] = useState(0);
   const list = [
-    {"heading":"Bookmark in one click", "text" : "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.", "url" : "/images/illustration-features-tab-1.svg"},
-    {"heading" : "Intelligent search", "text": "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.","url" : "/images/illustration-features-tab-2.svg"},
-    {"heading" : "Share your bookmarks", "text": "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.","url" : "/images/illustration-features-tab-3.svg"}
+    {"heading":"Bookmark in one click", "text" : "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.", "url" : "./images/illustration-features-tab-1.svg"},
+    {"heading" : "Intelligent search", "text": "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.","url" : "./images/illustration-features-tab-2.svg"},
+    {"heading" : "Share your bookmarks", "text": "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.","url" : "./images/illustration-features-tab-3.svg"}
   ]
   return (
     <section className=" d-flex flex-column align-items-center">
@@ -113,9 +113,9 @@ const Features = () => {
 
 const Main = () => {
   const list = [
-    {"url": "/images/logo-chrome.svg","text":"Chrome","version":"62","margin":"mt-0"},
-    {"url": "/images/logo-firefox.svg","text":"Firefox","version":"55","margin":"mt-4"},
-    {"url": "/images/logo-opera.svg","text":"Opera","version":"46","margin":"mt-4 mt-md-5"}
+    {"url": "./images/logo-chrome.svg","text":"Chrome","version":"62","margin":"mt-0"},
+    {"url": "./images/logo-firefox.svg","text":"Firefox","version":"55","margin":"mt-4"},
+    {"url": "./images/logo-opera.svg","text":"Opera","version":"46","margin":"mt-4 mt-md-5"}
   ]
   return (
     <main className="container d-flex flex-column justify-content-center align-items-center">
@@ -191,7 +191,7 @@ const FaqItem = ({question,answer,index}) => {
     <div className=" p-3 position-relative border-bottom">
       <p className=" d-inline pe-3">{question}</p>
       <button className=" d-inline border-0 bg-white position-absolute end-0" data-bs-toggle="collapse" data-bs-target={`#${index}`} >
-        <img src="/images/icon-arrow.svg" alt="" />
+        <img src="./images/icon-arrow.svg" alt="" />
       </button>
       <div className="collapse mt-3" id={index}>{answer}</div>
     </div>
@@ -239,8 +239,8 @@ const Footer = () => {
           <a className=" text-center link-light link-underline-opacity-0" href="">CONTACT</a>
         </div>
         <div className="d-flex gap-4 m-3">
-          <img src="/images/icon-facebook.svg" alt="" />
-          <img src="/images/icon-twitter.svg" alt="" />
+          <img src="./images/icon-facebook.svg" alt="" />
+          <img src="./images/icon-twitter.svg" alt="" />
         </div>
       </div>
     </footer>
